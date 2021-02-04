@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+
+{% block title %}Search Results{% endblock title %}
+
+{% block blogactive %} active {% endblock blogactive %}
+
+{% block body %}
+
+
+<div class="container my-3">
+    <h2>Search Results:</h2>
+    {% if allPosts|length < 1 %} <p>No Search Results</p>
+        Your search - <b>{{query| truncatechars:220}}</b> - did not match any documents.<br>
+        <div class="container my-3">Suggestions:
+            <ul>
+                <br>
+                <li>Make sure that all words are spelled correctly</li>
+                <li>Try different keywords.</li>
+            </ul>
+        </div>
+        {% endif %}
+        {% for post in allPosts %}
+
+
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative my-3">
+            <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary">Article By {{post.author}}</strong>
+                <h3 class="mb-0">{{post.title}}</h3>
+                <div class="mb-1 text-muted">{{post.dateTime}}</div>
+                <p class="card-text mb-auto">{{post.content| truncatechars:460}}</p>
+                <a href="/blog/{{post.slug}}" class="stretched-link">Continue reading</a>
+            </div>
+        </div>
+        {% endfor %}
+</div>
+
+{% endblock body %}

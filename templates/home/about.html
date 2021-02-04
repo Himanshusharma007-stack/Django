@@ -1,0 +1,127 @@
+{% extends 'base.html' %}
+
+{% block title %}HackersPoint | About{% endblock title %}
+
+{% block aboutactive %} active {% endblock aboutactive %}
+
+{% block body %}
+<head>
+  <style>
+    h.textshadow {
+      text-align: center;
+      text-shadow: 8px 8px 6px #2B89C6, 8px 8px 6px black;
+    }
+
+    h.textshadow:hover {
+      text-align: center;
+      text-shadow: 8px 8px 6px #2B89C6, 8px 8px 6px #2B89C6;
+    }
+
+    #shadow:hover {
+      box-shadow: 30px 20px 30px;
+    }
+
+    #shadoww:hover {
+      box-shadow: 20px 10px 20px;
+    }
+
+    #shadow {
+      box-shadow: 20px 10px 20px;
+    }
+  </style>
+
+<body margin="0">
+  <meta http-equiv="refresh" content="200">
+  <h class="textshadow" width: 100%;>
+    <font size="15"><i>Himanshu<sub>Sharma</sub></i></span></font>
+  </h>
+  <div style="background-color:#000000; height:3px; width:100%;" class="my-3">
+  <hr>
+  </div>
+
+
+  <table cellpadding="15" width="100%">
+    <tr>
+      <td align="center" height="70">
+        <font class="text-info" size="15">
+          <marquee behavior="alternate" direction="right" scrollamount="4" class="my-3"><b><i>Welcome to HackersPoint About Section</i></b></marquee>
+        </font>
+      </td>
+    </tr>
+  </table>
+
+  <!-- ABOUT -->
+  <table width="100%" cellpadding="20" bgcolor="white">
+    <th style="text-decoration: underline;" id="abt" colspan="2">
+      <h4 size="10" class="text-center">About</h4>
+    </th>
+
+    <tr id="shadow">
+      <td id="shadoww" width="50%"><img
+          src="https://1.bp.blogspot.com/-Q0lJnIIO5eQ/XzJhbTl83EI/AAAAAAAAEa8/BHEMyEtx114jzkhMTH7X39F5OPXP9J7ygCLcBGAsYHQ/s640/Himanshu.jpg"
+          height="320" width="320"></td>
+      <td><b>
+          <font color="black">Hi, I am Himanshu Sharma<br>
+            From Shri Ram College of Management and lives in Muzaffarnagar
+        </b><br><br>
+        <ul>
+          <li>I completed my school Education on year 2015</li><br>
+          <li>I completed my graduation in year 2018 from CCS University,Meerut</li><br>
+          <li>I know the Programming languages like C, C++, Core Java, JavaScript, Python.</li><br>
+          <li>I know the web languages like HTML, CSS, javascript.</li><br>
+          <li>I also know the Frameworks like Django, Bootstrap.</li>
+          </font>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" align="center"><button style="border-radius: 8px;"><a
+            href="https://drive.google.com/file/d/1h5GUYxKDReytgztVVBDM-5fqpkU9smop/view?usp=sharing"
+            download="https://drive.google.com/file/d/1h5GUYxKDReytgztVVBDM-5fqpkU9smop/view?usp=sharing"
+            target="_blank">
+            <font size="4">Download CV</font>
+          </a></button></td>
+    </tr>
+
+    <!-- SERVICES -->
+    <td style="text-decoration: underline;" id="ser" align="center" colspan="2" bgcolor="white">
+      <h4 color="black" size="4"><b>Services</b></h4>
+    </td>
+    </tr>
+    <ul>
+      <tr bgcolor="white" style="text-align:center">
+        <td><b>
+            <li>Front End Developer</li>
+          </b></td>
+        </li>
+        <td><b>
+            <li>Backend Developer</li>
+          </b></td>
+      </tr>
+      </li>
+
+      <tr bgcolor="white" style="text-align:center">
+        <td><b>
+            <li>Full Stack Developer</li>
+          </b></td>
+        <td><b>
+            <li>Software Developer</li>
+          </b></td>
+      </tr>
+    </ul>
+  </table>
+
+
+  <!-- FORM -->
+  <style>
+    form {
+      text-align: center;
+    }
+
+    h1 {
+      text-decoration: underline;
+      background-color: purple;
+    }
+  </style>
+
+</html>
+{% endblock body %} 
