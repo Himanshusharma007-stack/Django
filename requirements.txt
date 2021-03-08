@@ -1,4 +1,4 @@
-to install python requirements.txt python libraries please use this command-- "pip install -r requirements.txt" please remove this file before running this command
+#to install python requirements.txt python libraries please use this command-- "pip install -r requirements.txt" please remove this file before running this command
 
 
 django==3.1.4
